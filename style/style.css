@@ -56,10 +56,10 @@ header > p {
     font-family: var(--fonte-padrao);
     font-size: 1.2em;
     color: white;
-    min-width: 500px;
+    max-width: 90%;
+    margin: auto;
     padding-right: 10px;
     padding-left: 10px;
-    margin: auto;
     padding-bottom: 50px;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.404);
 }
@@ -202,4 +202,26 @@ footer a {
 footer a:hover {
     text-decoration: underline;
     color: var(--cor1);
+}
+
+
+@media screen and (max-width: 600px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav > a {
+    margin: 5px 0;
+  }
+
+  header > h1 {
+    font-size: 2em;
+  }
+
+  header > p {
+    font-size: 1em;
+    padding: 0 10px;
+  }
 }
